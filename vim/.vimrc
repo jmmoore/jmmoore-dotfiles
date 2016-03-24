@@ -28,6 +28,19 @@ set showmatch
 set incsearch
 set hlsearch
 
+" Set statusbar stuff - stolen from jcbwlkr
+set laststatus=2            "Always show status line
+set statusline=%f           "Show path to file
+set statusline+=%<          "Truncate if status line too long
+set statusline+=\ %y        "File type, e.g. [python]
+set statusline+=%r          "[RO] if file is read only
+set statusline+=%m          "[+] if file is modified
+set statusline+=%=          "Switch to right side
+set statusline+=%p%%q       "Show percentage through file
+set statusline+=\ %l,%c     "Line and column numbers
+
+set showmode                "Show current mode below status bar (when not in normal mode)
+
 "Training myself out of the arrow keys
 noremap <Up> <Esc>
 noremap <Down> <Esc>
